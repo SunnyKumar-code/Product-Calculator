@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main">
+    <p class="none" style="text-align: center;" id="none">No Product Added to the cart</p>
+    <form class="input">
+        <input type="text" id="product" placeholder="Product" required>
+        <input type="number" id="price" placeholder="Price" required>
+        <button type="submit" id="submit">Add</button>
+    </form>
+    <div class="main-container">
+        <div class="cart-product">
+        <h2>Products</h2>
+        <ul id="products">
+            <!-- Products will be dynamically added here -->
+        </ul>
+    </div>
+    <div class="cart">
+        <h2>Cart</h2>
+        <ul id="cart">
+            <!-- Cart items will be dynamically added here -->
+        </ul>
+        <div class="total">
+            <p>Total:Rs <span id="total">0</span></p>
+        </div>
+        
+    </div>
+</div>
+    
+</div>
+<script src="app.js"></script>
+</body>
+</html>
